@@ -39,41 +39,23 @@ funded by the International Climate Initiative (IKI) of the Federal Republic of 
 
 ## Planting Zones
 
-The park is divided into five zones, each with its own species composition and 
-planting pattern.
-
-**Zone A: Riparian Edge**
-Canal-facing buffer. Species drift in loose clusters parallel to the water, with 
-gaps every 25-40m to preserve sightlines. Dominant species: *Barringtonia acutangula*, 
-*Syzygium cumini*.
-
-**Zone B: Open Parkland**
-The main lawn area around the pond. Large canopy clusters alternate with open space 
-for activities. Dominant species: *Neolamarckia cadamba*.
-
-**Zone C: Wetland Memory**
-Former peat bog. Planting is restricted to the pond edge only — no trees in water. 
-Density increases with distance from the waterline, referencing the feel of the 
-original swamp without recreating it literally. Dominant species: *Syzygium* sp., 
-*Palaquium obovatum*.
-
-**Zone D: Back-of-House**
-Green buffer behind park buildings. Mixed species in loose Poisson-distributed 
-clusters with void gaps. Dominant species: *Mimusops elengi*.
-
-**Zone E: Playground**
-Edge-only planting around the perimeter. Center kept open for visibility and safety. 
-All species are child-safe, thorn-free. Dominant species: *Mimusops elengi*.
+| Zone | Character | Pattern | Dominant | Secondary | Tertiary | Understory | Groundcover |
+|------|-----------|---------|----------|-----------|----------|------------|-------------|
+| A: Riparian Edge | Canal-facing buffer | Drift + Layered Edge | *Barringtonia acutangula*, *Syzygium cumini* | *Syzygium praecox*, *Elaeocarpus hygrophilus* | — | *Ixora javanica*, *Clerodendrum inerme*, *Melastoma malabathricum* | *Ophiopogon japonicus*, native sedges |
+| B: Open Parkland | Main lawn around pond | Cluster + Open Matrix | *Neolamarckia cadamba* | *Mimusops elengi*, *Fagraea fragrans* | *Handroanthus chrysanthus* | *Ixora* spp. | *Zoysia matrella*, *Desmodium triflorum* |
+| C: Wetland Memory | Former peat bog, edge planting only | Dense edge ring | *Syzygium* sp., *Palaquium obovatum* | *Cotylelobium melanoxylon*, *Shorea roxburghii* | — | *Pandanus amaryllifolius*, *Hedychium coronarium*, *Alpinia galanga* | *Centella asiatica*, *Nephrolepis biserrata* |
+| D: Back-of-House | Green buffer behind buildings | Poisson Cluster + Void | *Mimusops elengi* | *Cotylelobium melanoxylon*, *Syzygium cumini*, *Fagraea fragrans*, *Lagerstroemia* sp. | *Handroanthus chrysanthus* | *Duranta erecta*, *Acalypha wilkesiana* | *Axonopus compressus* |
+| E: Playground | Perimeter edge, open center | Loose Cluster, edge only | *Mimusops elengi* | *Lagerstroemia* sp., *Radermachera ignea* | *Handroanthus chrysanthus* | *Hibiscus rosa-sinensis* | *Zoysia matrella* |
 
 ---
 
 ## Data Sources
 
-- **LiDAR Canopy Coverage** — Meta + LiDAR derived canopy shapefile
-- **Tree Inventory** — Municipal survey, 435 trees (KML)
-- **Zone Boundaries** — Field-verified polygons (KML)
-- **Wildlife Data** — iNaturalist observations (381 records, CSV)
-- **Satellite Imagery** — Landsat 8/9 for LST baseline
+- **LiDAR Canopy Coverage**: Meta + LiDAR derived canopy shapefile
+- **Tree Inventory**: Municipal survey, 435 trees (KML)
+- **Zone Boundaries**: Field-verified polygons (KML)
+- **Wildlife Data**: iNaturalist observations (381 records, CSV)
+- **Satellite Imagery**: Landsat 8/9 for LST baseline
 
 ---
 
@@ -102,10 +84,10 @@ Tools used: Python, GeoPandas, Shapely, Leaflet.js, QGIS.
 
 ## LA Design Principles Applied
 
-- **Massing vs Scattering** : Poisson-disk clusters with glade voids, not uniform grid
-- **Plant Community / Phytosociology** : species grouped by ecological association per zone
-- **Rhythm & Sequential Experience** : corridor planting with regular spacing and accent nodes
-- **Wetland Memory** : planting design references the site's original peat swamp ecology conceptually, not as full ecosystem reconstruction
+- **Massing vs Scattering**: Poisson-disk clusters with glade voids, not uniform grid
+- **Plant Community / Phytosociology**: species grouped by ecological association per zone
+- **Rhythm & Sequential Experience**: corridor planting with regular spacing and accent nodes
+- **Wetland Memory**: planting design references the site's original peat swamp ecology conceptually, not as full ecosystem reconstruction
 
 *Reference: the Guidelines on greenery provision and tree conservation for developments (NPark, Singapore)*
 
