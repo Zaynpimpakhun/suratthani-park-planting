@@ -112,7 +112,9 @@ Tools used: Python, GeoPandas, Shapely, Leaflet.js, QGIS.
 
 ## Credit
 
-Developed under the **Urban Resilience Building and Nature** project under funded by IKI, Germany
-Surat Thani City Municipality · Thailand  
+Developed under the **Urban Resilience Building and Nature** project, funded by the 
+International Climate Initiative (IKI), the Federal Republic of Germany.
 
+Special thanks to **Surat Thani City Municipality** for providing site access, field 
+support, and spatial data throughout this project.
 
