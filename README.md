@@ -1,6 +1,6 @@
 # suratthani-park-planting
 URBAN - Rama IX Park Strategic Planting and Treecare Plan | Urban Resilience Building and Nature
-# Suratthani Rama IX Park — Urban Planting Plan
+# Surat Thani Rama IX Park — Urban Strategic Planting Plan
 
 **Strategic tree planting plan for UHI (Urban Heat Island) reduction**  
 Rama IX Public Park, Suratthani Municipality, Thailand
@@ -9,16 +9,16 @@ Live Dashboard → [zaynpimpakhun.github.io/suratthani-park-planting](https://za
 
 ---
 
-## Overview
+## About
 
-This project develops a spatial planting recommendation plan for Rama IX Public Park 
-in Suratthani, Thailand — a former wetland area now serving as the city's primary 
-green space. The plan aims to increase canopy coverage from 31% to over 60% and 
-reduce urban surface temperatures through evidence-based tree placement.
+Rama IX Park is an 8.97-hectare public park in central Suratthani, built on former 
+wetland and peat swamp. Current canopy coverage sits at 31%, well below the WHO 
+recommended 40%. This project develops an evidence-based planting plan to bring 
+coverage to 60% over 10 years, while reducing surface temperatures and restoring 
+some ecological character of the original site.
 
-Carried out under the **Urban Resilience Building and Nature** project, supported by 
-the Federal Ministry for the Environment, Climate Action, Nature Conservation and 
-Nuclear Safety of the Federal Republic of Germany (IKI).
+The work was carried out under the Urban Resilience Building and Nature project, 
+funded by the International Climate Initiative (IKI) of the Federal Republic of Germany.
 
 ---
 
@@ -39,13 +39,31 @@ Nuclear Safety of the Federal Republic of Germany (IKI).
 
 ## Planting Zones
 
-| Zone | Character | Dominant Species | Pattern |
-|------|-----------|-----------------|---------|
-| A — Riparian Edge | Canal buffer | *Barringtonia acutangula*, *Syzygium cumini* | Drift + Layered Edge |
-| B — Open Parkland | Activity lawn | *Neolamarckia cadamba* | Cluster + Open Matrix |
-| C — Wetland Memory | Former peat bog | *Syzygium* sp., *Palaquium obovatum* | Dense edge ring |
-| D — Back-of-House | Building buffer | *Mimusops elengi* | Poisson Cluster + Void |
-| E — Playground | Child-safe edge | *Mimusops elengi* | Loose Cluster, edge only |
+The park is divided into five zones, each with its own species composition and 
+planting pattern.
+
+**Zone A: Riparian Edge**
+Canal-facing buffer. Species drift in loose clusters parallel to the water, with 
+gaps every 25-40m to preserve sightlines. Dominant species: *Barringtonia acutangula*, 
+*Syzygium cumini*.
+
+**Zone B: Open Parkland**
+The main lawn area around the pond. Large canopy clusters alternate with open space 
+for activities. Dominant species: *Neolamarckia cadamba*.
+
+**Zone C: Wetland Memory**
+Former peat bog. Planting is restricted to the pond edge only — no trees in water. 
+Density increases with distance from the waterline, referencing the feel of the 
+original swamp without recreating it literally. Dominant species: *Syzygium* sp., 
+*Palaquium obovatum*.
+
+**Zone D: Back-of-House**
+Green buffer behind park buildings. Mixed species in loose Poisson-distributed 
+clusters with void gaps. Dominant species: *Mimusops elengi*.
+
+**Zone E: Playground**
+Edge-only planting around the perimeter. Center kept open for visibility and safety. 
+All species are child-safe, thorn-free. Dominant species: *Mimusops elengi*.
 
 ---
 
@@ -61,25 +79,35 @@ Nuclear Safety of the Federal Republic of Germany (IKI).
 
 ## Methodology
 
-1. **Canopy Gap Analysis** from LiDAR shapefile
-2. **UHI Priority Scoring** — weighted overlay of LST, imperviousness, distance from water
-3. **Species-Site Matching** — zone-specific plant community assignment based on ecology and local species associations
-4. **Placement Logic** — zone-specific controlled randomness (Poisson-disk clustering, drift patterns, density gradients)
-5. **Wildlife-informed Selection** — species chosen to support observed fauna (iNaturalist)
-6. **Ground Truth Verification** — all 437 planting positions verified on-site by municipal staff
+Canopy gaps were identified from LiDAR-derived shapefiles and cross-referenced with 
+a field survey of 435 existing trees. Each candidate planting location was scored 
+by UHI priority (surface temperature, distance from water, imperviousness) and 
+assigned a species based on the ecological character of its zone.
 
-**Tools:** Python · GeoPandas · Shapely · Leaflet.js · QGIS
+Placement uses controlled randomness rather than a uniform grid: Poisson-disk 
+clustering with zone-specific void ratios and density gradients. Species groupings 
+follow plant community logic, so trees that appear together make ecological sense 
+rather than being scattered randomly.
+
+Wildlife data from 381 iNaturalist observations in the park informed species 
+selection. For example, *Barringtonia* and *Syzygium* were prioritized in Zone A 
+and C because fruiting species directly support the bird species already recorded 
+on site.
+
+All 437 final positions were checked and confirmed by municipal staff on the ground.
+
+Tools used: Python, GeoPandas, Shapely, Leaflet.js, QGIS.
 
 ---
 
 ## LA Design Principles Applied
 
-- **Massing vs Scattering** — Poisson-disk clusters with glade voids, not uniform grid
-- **Plant Community / Phytosociology** — species grouped by ecological association per zone
-- **Rhythm & Sequential Experience** — corridor planting with regular spacing and accent nodes
-- **Wetland Memory** — planting design references the site's original peat swamp ecology conceptually, not as full ecosystem reconstruction
+- **Massing vs Scattering** : Poisson-disk clusters with glade voids, not uniform grid
+- **Plant Community / Phytosociology** : species grouped by ecological association per zone
+- **Rhythm & Sequential Experience** : corridor planting with regular spacing and accent nodes
+- **Wetland Memory** : planting design references the site's original peat swamp ecology conceptually, not as full ecosystem reconstruction
 
-*Reference: Bidadari Park, Singapore (Habitat Mosaics framework)*
+*Reference: the Guidelines on greenery provision and tree conservation for developments (NPark, Singapore)*
 
 ---
 
@@ -100,9 +128,9 @@ planting_verified_437.kml   — Same data for Google Earth / QGIS
 
 ---
 
-## Project Team
+## Credit
 
-Developed under the **Urban Resilience Building and Nature** project  
-Suratthani Municipality · Thailand  
-*Supported by International Climate Initiative (IKI) of the Federal Republic of Germany*
+Developed under the **Urban Resilience Building and Nature** project under funded by IKI, Germany
+Surat Thani City Municipality · Thailand  
+
 
