@@ -94,18 +94,18 @@ Tools used: Python, GeoPandas, Shapely, Leaflet.js, QGIS.
 ---
 
 ## Files
-index.html  — Interactive dashboard (standalone, no server required)
-planting_verified_437.csv   — Verified planting positions (Lat/Lon + attributes)
-planting_verified_437.kml   — Same data for Google Earth / QGIS
+- **index.html**: Interactive dashboard (standalone, no server required)
+- **planting_verified_437.csv**: Verified planting positions (Lat/Lon + attributes)
+- **planting_verified_437.kml**: Same data for Google Earth / QGIS
 
 ---
 
 ## How to Use
 
-**View dashboard** → open the live link above
+**View dashboard** > open the live link above
 
 **Use in QGIS:**
-- CSV: Layer → Add Delimited Text Layer → set X = Longitude, Y = Latitude, CRS = EPSG:4326
+- CSV: Layer > Add Delimited Text Layer > set X = Longitude, Y = Latitude, CRS = EPSG:4326
 - KML: drag `.kml` directly into QGIS Layers panel
 
 ---
